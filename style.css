@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-text-colour: #324536;
+    --dark-text-colour: #292929;
+    --light-text-colour: #FFFFFF;
+    --bg-colour-main: #324536;
+
+}
+
+
+html {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+p {
+
+}
+
+.btn {
+    background-color: var(--bg-colour-main);
+    color: var(--light-text-colour);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 28px;
+    padding: 12px 38px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.hero-container {
+    height: 100vh;
+    background-image: url("./src/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-position:  -220px 0;
+    background-size: cover;
+}
+
+nav {
+    height: 64px;
+    background-color: transparent;
+}
+
+.main-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 64px);
+    color: var(--header-text-colour);
+}
+
+.main-cover span {
+    margin: 20px 0px 95px 0px;
+    width: 160px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.self-description {
+    height: 155px;
+    text-align: center;
+    background-color: var(--bg-colour-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.self-description span{
+    width: 260px;
+    font-size: 1rem;
+    line-height: 22px;
+    font-family: 'Futura', cursive;
+    color: var(--light-text-colour);
+    position: relative;
+}
+
+.self-description span::before{
+    content: url("./src/left-1.svg");
+    font-family: 'Satisfy', cursive;
+    width: 20px;
+    position: absolute;
+    left: -25px;
+    top: -20px
+}
+
+.self-description span::after{
+    content: url("./src/right-1.svg");
+    font-family: 'Satisfy', cursive;
+    width: 20px;
+    position: absolute;
+    bottom: -20px;
+    right: -25px;
+}
+
+.personal-details {
+    height: 50vh
+}
