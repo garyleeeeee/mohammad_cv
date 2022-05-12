@@ -7,11 +7,13 @@
 }
 
 :root {
+    scroll-behavior: smooth;
+
     --header-text-colour: #324536;
     --dark-text-colour: #292929;
     --light-text-colour: #FFFFFF;
+    --secondary-text-color: #EEBC0B;
     --bg-colour-main: #324536;
-
 }
 
 
@@ -26,39 +28,47 @@ body {
 }
 
 h1 {
+    font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
+    margin: 0;
 }
 
 h2 {
+    font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: 700;
     font-size: 28px;
     line-height: 35px;
 }
 
 h3 {
+    font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
 }
 
 h4 {
+    font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
 }
 
 h5 {
+    font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: 600;
     font-size: 22px;
     line-height: 28px;
 }
 
 p {
-
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 16px;
 }
 
+/* General Button Settings - Contact Me  */
 .btn {
     background-color: var(--bg-colour-main);
     color: var(--light-text-colour);
@@ -71,6 +81,7 @@ p {
     text-decoration: none;
 }
 
+/* HERO Cover - BG IMAGE */
 .hero-container {
     height: 100vh;
     background-image: url("./src/main-bg.jpg");
@@ -79,11 +90,80 @@ p {
     background-size: cover;
 }
 
+/* Navbar Container */
 nav {
     height: 64px;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 0px 24px;
+    position: relative;
+    justify-content: flex-end;
 }
 
+/* Menu Icon */
+.fa-bars {
+    z-index: 2;
+    font-size: 30px;
+    color: var(--light-text-colour);
+    cursor: pointer;
+    color: var(--header-text-colour);
+}
+
+/* Close Button Icon */
+.fa-xmark {
+    display: none;
+    z-index: 2;
+    font-size: 35px;
+    color: var(--light-text-colour);
+    cursor: pointer;
+    color: var(--light-text-colour);
+}
+
+/* Nav Links Section */
+.navigation {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: var(--bg-colour-main);
+    border-radius: 0px 0px 15px 15px;
+    transition: height 0.5s ease-in-out;
+}
+
+/* Nav Links Section -- Active */
+.navigation.active {
+    height: 280px;
+}
+
+/* UL Containing all anchor tags */
+.nav-links {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Single Nav Link */
+.navigation a {
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--light-text-colour);
+    padding: 8px 20px;
+}
+
+.navigation a:hover {
+    transform:scale(1.1);
+    color: var(--secondary-text-color);
+}
+
+/* Main Area containing Texts */
 .main-cover {
     display: flex;
     flex-direction: column;
@@ -94,7 +174,12 @@ nav {
     color: var(--header-text-colour);
 }
 
+.main-cover h1 {
+    width: 280px;
+}
+
 .main-cover span {
+    font-family: 'Source Sans Pro', sans-serif !important;
     margin: 20px 0px 95px 0px;
     width: 160px;
     font-weight: 700;
@@ -102,6 +187,32 @@ nav {
     line-height: 28px;
 }
 
+#toTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--bg-colour-main); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 0.65;
+}
+  
+#toTopBtn:hover {
+    background-color: var(--secondary-text-color); /* Add a dark-grey background on hover */
+}
+
+.fa-circle-arrow-up {
+    font-size: 20px;
+}
+
+/* Paragraph Section*/
 .self-description {
     height: 155px;
     text-align: center;
@@ -111,6 +222,7 @@ nav {
     align-items: center;
 }
 
+/* Paragraph Text Content*/
 .self-description span{
     width: 260px;
     font-size: 1rem;
@@ -120,15 +232,17 @@ nav {
     position: relative;
 }
 
+/* Paragraph Comma 1st */
 .self-description span::before{
     content: url("./src/left-1.svg");
     font-family: 'Satisfy', cursive;
     width: 20px;
     position: absolute;
     left: -25px;
-    top: -20px
+    top: -20px;
 }
 
+/* Paragraph Comma 2nd */
 .self-description span::after{
     content: url("./src/right-1.svg");
     font-family: 'Satisfy', cursive;
@@ -139,5 +253,22 @@ nav {
 }
 
 .personal-details {
-    height: 50vh
+    height: 120vh
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    /* HERO Cover - BG IMAGE */
+    .hero-container {
+        background-position: unset;
+    }
+
+
+}
+
+@media only screen and (min-width: 1280) {
+
+
 }

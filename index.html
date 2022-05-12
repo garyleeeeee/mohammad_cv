@@ -5,33 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohammad Ahmad</title>
-
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/efd0e429e3.js" crossorigin="anonymous"></script>
     <!-- Local CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Nav Links -->
+    <div class="navigation" id="navigation">
+        <ul class="nav-links">
+            <a onclick="toggleNav()" href="#">About Me</a>
+            <a onclick="toggleNav()" href="#">Services</a>
+            <a onclick="toggleNav()" href="#">Experience</a>
+            <a onclick="toggleNav()" href="#">Projects</a>
+            <a onclick="toggleNav()" href="#">Contact Me</a>
+        </ul>
+    </div>
+    <!-- Hero Cover -->
     <main class="hero-container">
-        <nav>
-
+        <nav class="navbar">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
         </nav>
         <div class="main-cover">
-            <h1>Hi, I am <br>Mohammad Ahmad</h1>
+            <h1>Hi, I am Mohammad Ahmad</h1>
             <span>A Professional Fashion Designer</span>
-            <a class="btn" href="#">Find Out More</a>
+            <a class="btn" href="#">Contact Me</a>
         </div>
     </main>
-    <section class="self-description">
+    <!-- Scroll To Top Button -->
+    <button onclick="topFunction()" id="toTopBtn"><i class="fa-solid fa-circle-arrow-up"></i></button>
+    <!-- Self-Description -->
+    <section class="self-description" id="self-description">
         <span>I offer imaginative and creative ideas as well as knowledge of current fashion trends to create novel clothing items. </span>
     </section>
+    <!-- Personal Info -->
     <section class="personal-details">
         
     </section>
-
-
-
-
-
-
 
 
 
