@@ -43,6 +43,7 @@ h2 {
 }
 
 h3 {
+    color: var(--header-text-colour);
     font-family: 'Source Sans Pro', sans-serif !important;
     font-weight: 700;
     font-size: 24px;
@@ -142,7 +143,7 @@ nav {
 
 /* UL Containing all anchor tags */
 .nav-links {
-    margin-top: 70px;
+    margin-top: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,8 +187,10 @@ nav {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+
 }
 
+/* GO To Top Button*/
 #toTopBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -205,7 +208,7 @@ nav {
     opacity: 0.65;
 }
   
-
+/* Go To Top Icon */
 .fa-circle-arrow-up {
     font-size: 20px;
 }
@@ -250,28 +253,241 @@ nav {
     bottom: -20px;
     right: -25px;
 }
-
+/* ----------------------------------------------------------- */
+/* Personal Details Section */
+/* ----------------------------------------------------------- */
 .personal-details {
-    height: 120vh
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 42px 24px;
+}
+
+/* Image and Basic Info DIV */
+.brief-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Portrait */
+.brief-profile img{
+    width: 250px;
+}
+
+#fullname {
+    color: var(--dark-text-colour);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+#business-title {
+    color: var(--dark-text-colour);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 16px;
 }
 
 
+.social-icons i {
+    color: var(--dark-text-colour);
+    font-size: 25px;
+    margin-right: 16px;
+}
+
+/* Detail Info DIV */
+.detail-info-block {
+    margin-top: 52px;
+}
+
+.detail-info-block p {
+    margin-top: 32px;
+    margin-bottom: 50px;
+    color: var(--dark-text-colour);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
 
 
 @media only screen and (min-width: 768px) {
+
+    h1 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 75px;
+    }
+    
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .navbar {
+        padding: 0px 30px;
+    }
+
+    /* Menu Icon */
+    .fa-bars {
+        z-index: 2;
+        font-size: 35px;
+        color: var(--light-text-colour);
+        cursor: pointer;
+        color: var(--header-text-colour);
+    }
+
+    /* Close Button Icon */
+    .fa-xmark {
+        display: none;
+        z-index: 2;
+        font-size: 40px;
+        color: var(--light-text-colour);
+        cursor: pointer;
+        color: var(--light-text-colour);
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    #toTopBtn:hover {
+        background-color: var(--secondary-text-color);
+    }
+
+    /* Hi I am MA */
+    .main-cover h1 {
+        width: 520px;
+    }
+
+    /* A Professional Fashion Desinger */
+    .main-cover span {
+        font-family: 'Source Sans Pro', sans-serif !important;
+        margin: 20px 0px 95px 0px;
+        min-width: 465px;
+        font-size: 35px;
+        line-height: 44px;
+    
+    }
+    
+    /* Contact Me Button */
+    .main-cover a {
+        padding: 22px 80px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    /* Self Description Section */
+    .self-description {
+        height: 235px;
+    }
+
+    /* Paragraph Text Content*/
+    .self-description span{
+        width: 510px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 48px;
+    }
+
+        /* Paragraph Comma 1st */
+    .self-description span::before{
+        width: 30px;
+    }
+
+    /* Paragraph Comma 2nd */
+    .self-description span::after{
+        width: 30px;
+    }
+
+    /* ----------------------------------------------------------- */
+    /* Personal Details Section */
+    /* ----------------------------------------------------------- */
+    .personal-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 55px 60px 80px 60px;
+    }
+
+    .brief-profile {
+        order: 1;
+    }
+
+    .detail-info-block p {
+        margin-top: 45px;
+        margin-bottom: 80px;
+        margin-right: 90px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1280px) {
+
     /* HERO Cover - BG IMAGE */
     .hero-container {
         background-position: unset;
     }
 
-    #toTopBtn:hover {
-        background-color: var(--secondary-text-color); /* Add a dark-grey background on hover */
+    .main-cover h1 {
+        width: 725px;
     }
 
+    .main-cover span {
+        font-family: 'Source Sans Pro', sans-serif !important;
+        margin: 20px 0px 95px 0px;
+    
+    }
 
-}
+    /* Paragraph Text Content*/
+    .self-description span{
+        width: 760px;
+    }
 
-@media only screen and (min-width: 1280) {
+    /* Paragraph Comma 1st */
+    .self-description span::before{
+        width: 30px;
+        top: -35px;
+        left: -50px;
+    }
 
+    /* Paragraph Comma 2nd */
+    .self-description span::after{
+        width: 30px;
+        bottom: -35px;
+        right: -50px;
+    }    
 
+    .personal-details {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 42px 60px 60px 60px;
+    }
+
+    .brief-profile {
+        margin-right: 100px;
+    }
+
+    .detail-info-block p {
+        margin-top: 50px;
+        margin-bottom: 80px;
+        margin-right: 230px;
+    }
+    
+    
 }
