@@ -23,7 +23,7 @@ topFunction = () => {
 }
 
 scrollFunction = () => {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     toTopbutton.style.display = "block";
 } else {
     toTopbutton.style.display = "none";

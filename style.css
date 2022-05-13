@@ -25,6 +25,7 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
+    min-width: 320px;
 }
 
 h1 {
@@ -67,6 +68,8 @@ h5 {
 p {
     font-family: 'Source Sans Pro', sans-serif !important;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 /* General Button Settings - Contact Me  */
@@ -85,9 +88,9 @@ p {
 /* HERO Cover - BG IMAGE */
 .hero-container {
     height: 100vh;
-    background-image: url("./src/main-bg.jpg");
+    background-image: url("./src/mobile-bg.jpg");
     background-repeat: no-repeat;
-    background-position:  -220px 0;
+    background-position: center;
     background-size: cover;
 }
 
@@ -177,7 +180,6 @@ nav {
 
 .main-cover h1 {
     width: 280px;
-
 }
 
 .main-cover span {
@@ -187,7 +189,10 @@ nav {
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+}
 
+.main-cover .btn {
+    overflow-y: hidden;
 }
 
 /* GO To Top Button*/
@@ -303,6 +308,7 @@ nav {
 /* Detail Info DIV */
 .detail-info-block {
     margin-top: 52px;
+    width: 100%;
 }
 
 .detail-info-block p {
@@ -313,6 +319,121 @@ nav {
     font-size: 16px;
     line-height: 28px;
 }
+
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 220px;
+    margin-top: 32px;
+    justify-content: flex-end;
+}
+
+.skill-set li {
+    list-style: none;
+    position: relative;
+    width: 45.3%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--dark-text-colour);
+    margin-right: 12px;
+
+}
+
+.skill-set li::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    top: 10px;
+    left: -15px;
+    background-color: var(--bg-colour-main);
+    border-radius: 15px;
+}
+
+/* ----------------------------------------------------------- */
+/* Services Section */
+/* ----------------------------------------------------------- */
+
+.services-section {
+    background-color: var(--bg-colour-main);
+    padding: 40px 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-section span {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.services-section h2 {
+    color: var(--light-text-colour);
+    margin-top: 10px;
+    margin-bottom: 65px;
+
+}
+
+.one-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-service img {
+    width: 110px;
+}
+
+.one-service h4 {
+    color: var(--secondary-text-color);
+    margin: 40px 0px;
+
+}
+
+.one-service p {
+    color: var(--light-text-colour);
+    text-align: center;
+    width: 255px;
+}
+
+.one-service:nth-child(n+2) {
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (min-width: 768px) {
@@ -364,6 +485,14 @@ nav {
 
     #toTopBtn:hover {
         background-color: var(--secondary-text-color);
+    }
+
+    /* HERO Cover - BG IMAGE */
+    .hero-container {
+        background-image: url("./src/tablet-bg.jpg");
+        background-position: right 0;
+
+        background-size: cover;
     }
 
     /* Hi I am MA */
@@ -430,17 +559,57 @@ nav {
         margin-top: 45px;
         margin-bottom: 80px;
         margin-right: 90px;
+        font-size: 18px;
     }
 
+    /* ----------------------------------------------------------- */
+    /* Services Section */
+    /* ----------------------------------------------------------- */
+    .services-section {
+        padding: 60px 85px 110px 85px;
+    }
 
+    .services-section h2 {
+        margin-bottom: 0px;
+    }
+
+    .services-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .one-service {
+        width: 50%;
+        margin-top: 80px;
+        height: 330px;
+        justify-content: flex-start;
+    }
+
+    .one-service p {
+        width: 245px;
+    }
 }
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 1280px) {
 
-    /* HERO Cover - BG IMAGE */
-    .hero-container {
-        background-position: unset;
-    }
+/* HERO Cover - BG IMAGE */
+.hero-container {
+    height: 100vh;
+    background-image: url("./src/desktop-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: hidden;
+}
 
     .main-cover h1 {
         width: 725px;
@@ -471,6 +640,10 @@ nav {
         right: -50px;
     }    
 
+    /* ----------------------------------------------------------- */
+    /* Personal Details Section */
+    /* ----------------------------------------------------------- */
+
     .personal-details {
         display: flex;
         flex-direction: row;
@@ -488,6 +661,29 @@ nav {
         margin-bottom: 80px;
         margin-right: 230px;
     }
+
+    .skill-set {
+        height: 150px;
+        margin-top: 50px;
+        justify-content: space-around;
+    }
+
+    /* ----------------------------------------------------------- */
+    /* Services Section */
+    /* ----------------------------------------------------------- */
     
-    
+    .services-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .one-service {
+        width: 25%;
+        margin-top: 85px;
+        height: 335px;
+        justify-content: flex-start;
+    }
+
+
 }
