@@ -243,7 +243,6 @@ nav {
 /* Paragraph Comma 1st */
 .self-description span::before{
     content: url("./src/left-1.svg");
-    font-family: 'Satisfy', cursive;
     width: 20px;
     position: absolute;
     left: -25px;
@@ -253,7 +252,6 @@ nav {
 /* Paragraph Comma 2nd */
 .self-description span::after{
     content: url("./src/right-1.svg");
-    font-family: 'Satisfy', cursive;
     width: 20px;
     position: absolute;
     bottom: -20px;
@@ -263,12 +261,15 @@ nav {
 /* Personal Details Section */
 /* ----------------------------------------------------------- */
 .personal-details {
+    padding: 42px 24px;
+    background-color: var(--bg-colour-secondary);
+}
+
+.details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 42px 24px;
-    background-color: var(--bg-colour-secondary);
 }
 
 /* Image and Basic Info DIV */
@@ -469,6 +470,7 @@ nav {
     font-weight: 700;
     font-size: 16px;
     line-height: 25px;
+    margin-left: 15px;
 }
 
 .one-experience hr {
@@ -507,50 +509,349 @@ nav {
     margin-top: 10px;
 }
 
-.swiper {
+.project-section .swiper {
     width: 100%;
     margin-top: 40px;
 }
 
-.swiper-slide {
+.project-section .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.swiper-wrapper {
+.project-section .swiper-wrapper {
     display: flex;
     align-items: center;
 }
 
-.swiper-slide img {
+.project-section .swiper-slide img {
     max-width: 80%;
     max-height: 50vh;
     border-radius: 15px;
 }
 
-.swiper-pagination {
+.project-section .swiper-pagination {
     position: relative;
     margin-top: 30px;
 }
 
 
+/* ----------------------------------------------------------- */
+/* Clients Section */
+/* ----------------------------------------------------------- */
+
+.clients-section {
+    background-color: var(--bg-colour-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 14px 35px 14px;
+}
+
+.clients-section > span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--secondary-text-color);
+}
+
+.clients-section h2 {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    color: var(--header-text-colour);
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logos img {
+    width: 95px;
+    margin: 12px 8px;
+}
 
 
+/* ----------------------------------------------------------- */
+/* Testimonials Section */
+/* ----------------------------------------------------------- */
 
+.testimonials-section {
+    width: 100%;
+    padding: 26px 24px 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-colour-main);
+}
 
+.testimonials-section > span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--secondary-text-color);
+}
 
+.testimonials-section h2 {
+    color: var(--light-text-colour);
+    margin-top: 10px;
+}
 
+.testimonials-section .swiper {
+    width: 100%;
+    margin-top: 40px;
+}
 
+.testimonials-section .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
 
+.testimonials-section .test-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 312px;
+    height: 380px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 80px 26px 60px 26px;
+    position: relative;
+}
 
+.testimonials-section .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.testimonials-section .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+}
 
+.test-card p {
+    color: var(--header-text-colour);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
 
+/* Paragraph Comma 1st */
+.test-card::before{
+    content: url("./src/left-1.svg");
+    width: 25px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
 
+/* Paragraph Comma 2nd */
+.test-card::after{
+    content: url("./src/right-1.svg");
+    width: 25px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
 
+.client-info {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
 
+.client-info span {
+    color: var(--header-text-colour);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 12px;
 
+}
 
+.client-info img {
+    width: 34px;
+}
+
+.testimonials-section .swiper-pagination-bullet {
+    background-color: #EEBC0B;
+}
+
+/* ----------------------------------------------------------- */
+/* Contact Me Section */
+/* ----------------------------------------------------------- */
+
+.contact-section {
+    padding: 35px 25px 45px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section h2 {
+    color: var(--header-text-colour);
+}
+
+.contact-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-card {
+    margin-top: 36px;
+    padding: 16px;
+    background-color: #F2F2F2;
+    width: 290px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.contact-card h4 {
+    margin: 20px 0px;
+    color: var(--header-text-colour);
+}
+
+.contact-card span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.contact-form form {
+    width: 80%;
+    max-width: 800px;
+}
+
+.contact-form input,textarea {
+    margin: 12px 0px;
+    width: 100%;
+    min-height: 48px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0px 10px;
+    color: var(--dark-text-colour);
+    border-radius: 15px;
+    border: 1px solid var(--bg-colour-main);
+}
+
+.contact-form textarea {
+    padding: 5px 10px;
+}
+
+#submitBtn {
+    margin-top: 20px;
+    border: none;
+    background-color: #EEBC0B;
+    color: var(--light-text-colour);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.map-view {
+    margin-top: 40px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+/* ----------------------------------------------------------- */
+/* Footer Section */
+/* ----------------------------------------------------------- */
+
+.footer-section {
+    padding: 45px 35px 35px 35px;
+    background-color: var(--bg-colour-main);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--light-text-colour);
+    text-decoration: none;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.footer-nav a {
+    padding: 10px 3px;
+    width: 33.3%;
+    text-align: center;
+}
+
+.footer-section hr {
+    width: 80%;
+}
+
+.footer-descriptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-descriptions span {
+    text-align: center;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--light-text-colour);
+    padding: 10px 0px;
+}
+
+.footer-social-icons {
+    margin-top: 45px;
+}
+
+.footer-social-icons .fa-brands {
+    font-size: 25px;
+    margin: 0px 16px 40px 16px;
+}
+
+.footer-descriptions span:nth-child(1) {
+    width: 145px;
+    margin-top: 30px;
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -661,11 +962,14 @@ nav {
     /* Personal Details Section */
     /* ----------------------------------------------------------- */
     .personal-details {
+        padding: 55px 60px 80px 60px;
+    }
+
+    .details-container {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        padding: 55px 60px 80px 60px;
     }
 
     .brief-profile {
@@ -707,9 +1011,9 @@ nav {
         width: 245px;
     }
 
-/* ----------------------------------------------------------- */
-/* Experience Section */
-/* ----------------------------------------------------------- */
+    /* ----------------------------------------------------------- */
+    /* Experience Section */
+    /* ----------------------------------------------------------- */
 
     .experience-section {
         padding: 45px 60px 45px 60px;
@@ -725,9 +1029,9 @@ nav {
         flex-basis: 45%;
     }
 
-/* ----------------------------------------------------------- */
-/* Project Section */
-/* ----------------------------------------------------------- */   
+    /* ----------------------------------------------------------- */
+    /* Project Section */
+    /* ----------------------------------------------------------- */   
 
     /* Pagination */
     .swiper-pagination {
@@ -744,7 +1048,134 @@ nav {
         margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0.5rem);
     }
 
+    /* ----------------------------------------------------------- */
+    /* Clients Section */
+    /* ----------------------------------------------------------- */
 
+    .clients-section {
+        padding: 40px 35px 80px 35px;
+    }
+
+    .client-logos {
+        justify-content: space-around;
+    }
+
+    .client-logos img {
+        width: 266px;
+        margin: 20px 40px;
+    }
+
+    /* ----------------------------------------------------------- */
+    /* Testimonials Section */
+    /* ----------------------------------------------------------- */
+
+    .testimonials-section {
+        padding: 60px 75px 80px 75px;
+    }
+
+    .testimonials-section .swiper {
+        margin-top: 60px;
+    }
+
+    .testimonials-section .test-card {
+        padding: 55px 80px 30px 80px;
+        width: 80%;
+        height: auto;
+    }
+
+    .testimonials-section p {
+        margin-bottom: 18px;
+    }
+
+    .client-info span {
+        margin-right: 14px;
+    }
+
+    .client-info img {
+        width: 55px;
+    }
+
+    /* Paragraph Comma 1st */
+    .test-card::before{
+        content: url("./src/left-1.svg");
+        width: 25px;
+        position: absolute;
+        left: 25px;
+        top: 30px;
+    }
+
+    /* Paragraph Comma 2nd */
+    .test-card::after{
+        content: url("./src/right-1.svg");
+        width: 25px;
+        position: absolute;
+        right: 25px;
+        bottom: 30px;
+    }
+
+    /* ----------------------------------------------------------- */
+    /* Contact Me Section */
+    /* ----------------------------------------------------------- */
+    .contact-section {
+        padding: 65px 40px 75px 40px;
+    }
+
+    .contact-card-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-card {
+        margin-top: 45px;
+        width: 30%;
+        min-height: 265px;
+        justify-content: flex-start;
+    }
+
+    .contact-form {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 75px;
+    }
+
+    .contact-form form {
+        width: 45%;
+    }
+
+    .contact-form .map-view {
+        width: 308px;
+        margin-top: 0px;
+    }
+
+    /* ----------------------------------------------------------- */
+    /* Footer Section */
+    /* ----------------------------------------------------------- */
+
+    .footer-section {
+        padding: 60px 80px 35px 80px;
+
+    }
+
+    .footer-nav {
+        width: 100%;
+    }
+
+    .footer-nav a {
+        padding: 10px 8px;
+        width: 18%;
+    }
+
+    .footer-social-icons .fa-brands {
+        font-size: 28px;
+        margin: 0px 16px 40px 16px;
+    }
+
+    .footer-descriptions span:nth-child(1) {
+        width: auto;
+        margin-top: 45px;
+    }
+    
 }
 
 
@@ -757,15 +1188,16 @@ nav {
 
 @media only screen and (min-width: 1280px) {
 
-/* HERO Cover - BG IMAGE */
-.hero-container {
-    height: 100vh;
-    background-image: url("./src/desktop-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow-y: hidden;
-}
+    /* HERO Cover - BG IMAGE */
+    .hero-container {
+        height: 100vh;
+        background-image: url("./src/desktop-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow-y: hidden;
+    }
+
 
     .main-cover h1 {
         width: 725px;
@@ -809,6 +1241,10 @@ nav {
         padding: 42px 60px 60px 60px;
     }
 
+    .details-container {
+        max-width: 2000px;
+    }
+
     .brief-profile {
         margin-right: 100px;
     }
@@ -833,6 +1269,7 @@ nav {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
+        max-width: 2000px;
     }
 
     .one-service {
@@ -850,6 +1287,10 @@ nav {
         padding: 45px 60px 120px 60px;
     }
 
+    .experience-container {
+        max-width: 2000px;
+    }
+
     .one-experience {
         flex-basis: 30%;
     }
@@ -863,8 +1304,64 @@ nav {
         margin-top: 5rem;
     }       
 
+    .project-section .swiper {
+        max-width: 2000px;
+    }
 
+    /* ----------------------------------------------------------- */
+    /* Clients Section */
+    /* ----------------------------------------------------------- */
+    .clients-section {
+        padding: 45px 35px 80px 35px;
+    }
+    
+    .client-logos {
+        max-width: 1400px;
+        justify-content: space-around;
+    }
 
+    .client-logos img {
+        width: 266px;
+        margin: 20px 16px;
+    }
+
+    .testimonials-section .swiper {
+        max-width: 2000px;
+    }
+
+    /* ----------------------------------------------------------- */
+    /* Contact Me Section */
+    /* ----------------------------------------------------------- */
+    .contact-section {
+        padding: 80px 70px 120px 70px;
+    }
+
+    .contact-card-container {
+        max-width: 2000px;
+    }
+
+    .contact-card {
+        min-height: 220px;
+    }
+
+    .contact-form {
+        max-width: 2000px;
+        justify-content: space-evenly;
+        margin-top: 120px;
+    }
+
+    /* ----------------------------------------------------------- */
+    /* Footer Section */
+    /* ----------------------------------------------------------- */
+
+    .footer-section {
+        padding: 80px 60px 35px 60px;
+
+    }
+
+    .footer-nav {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-height: 500px) {

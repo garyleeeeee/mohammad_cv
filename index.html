@@ -18,11 +18,11 @@
     <!-- Nav Links -->
     <div class="navigation" id="navigation">
         <ul class="nav-links">
-            <a onclick="toggleNav()" href="#">About Me</a>
-            <a onclick="toggleNav()" href="#">Services</a>
-            <a onclick="toggleNav()" href="#">Experience</a>
-            <a onclick="toggleNav()" href="#">Projects</a>
-            <a onclick="toggleNav()" href="#">Contact Me</a>
+            <a onclick="toggleNav()" href="#about-me">About Me</a>
+            <a onclick="toggleNav()" href="#my-services">Services</a>
+            <a onclick="toggleNav()" href="#my-experience">Experience</a>
+            <a onclick="toggleNav()" href="#my-projects">Projects</a>
+            <a onclick="toggleNav()" href="#contact-form">Contact Me</a>
         </ul>
     </div>
     <!-- Hero Cover -->
@@ -44,35 +44,37 @@
         <span>I offer imaginative and creative ideas as well as knowledge of current fashion trends to create novel clothing items. </span>
     </section>
     <!-- Personal Info -->
-    <section class="personal-details">
-        <div class="brief-profile">
-            <img src="./src/ma.png" alt="Protrait img">
-            <span id="fullname">Mohammad Ahmad</span>
-            <span id="business-title">Owner of Ella Moda & Ella Logistics</span>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a> 
-                <a href="#"><i class="fa-brands fa-facebook-square"></i></a> 
-                <a href="#"><i class="fa-brands fa-instagram"></i></a> 
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+    <section class="personal-details" id="about-me">
+        <div class="details-container">
+            <div class="brief-profile">
+                <img src="./src/ma.png" alt="Protrait img">
+                <span id="fullname">Mohammad Ahmad</span>
+                <span id="business-title">Owner of Ella Moda & Ella Logistics</span>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a> 
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>
+            </div>
+            <div class="detail-info-block">
+                <h3>About Me</h3>
+                <p>Creative Fashion Designer with 14+ years of solid track record in keeping updated about emerging fashions. Known to craft new and aesthetically pleasing designs to meet customers’ requirements.</p>
+                <h3>My Core Skills</h3>
+                <ul class="skill-set">
+                    <li>Creativity</li>
+                    <li>Business Management</li>
+                    <li>Leadership</li>
+                    <li>Pattern-Cutting</li>
+                    <li>Excellent Visualisation</li>
+                    <li>Strong Communication</li>
+                    <li>Awareness of Fashion Trend</li>
+                    <li>Understanding of Fabrics and Materials</li>
+                </ul>
             </div>
         </div>
-        <div class="detail-info-block">
-            <h3>About Me</h3>
-            <p>Creative Fashion Designer with 14+ years of solid track record in keeping updated about emerging fashions. Known to craft new and aesthetically pleasing designs to meet customers’ requirements.</p>
-            <h3>My Core Skills</h3>
-            <ul class="skill-set">
-                <li>Creativity</li>
-                <li>Business Management</li>
-                <li>Leadership</li>
-                <li>Pattern-Cutting</li>
-                <li>Excellent Visualisation</li>
-                <li>Strong Communication</li>
-                <li>Awareness of Fashion Trend</li>
-                <li>Understanding of Fabrics and Materials</li>
-            </ul>
-        </div>
     </section>
-    <section class="services-section">
+    <section class="services-section" id="my-services">
         <span>Services</span>
         <h2>What I Offer</h2>
         <div class="services-container">
@@ -98,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section class="experience-section">
+    <section class="experience-section" id="my-experience">
         <span>Resume</span>
         <h2>Work Experience</h2>
         <div class="experience-container">
@@ -159,7 +161,7 @@
             </div>
         </div>
     </section>
-    <section class="project-section">
+    <section class="project-section" id="my-projects">
         <span>Portfolio</span>
         <h2>Recent Projects</h2>
         <!-- Slider main container -->
@@ -181,7 +183,112 @@
             <div class="swiper-pagination"></div>
         </div>
     </section>
+    <section class="clients-section">
+        <span>Clients</span>
+        <h2>My Clients</h2>
+        <div class="client-logos">
+            <img src="./src/daraghmeh.svg" alt="daraghmeh">
+            <img src="./src/kadi.svg" alt="kadi">
+            <img src="./src/kal-koukh.svg" alt="kal-koukh">
+            <img src="./src/la-familiar.svg" alt="la-familiar">
+            <img src="./src/mark-down.svg" alt="mark-down">
+            <img src="./src/ohana.svg" alt="ohana">
+            <img src="./src/one-minute.svg" alt="one-minute">
+            <img src="./src/the-outfit.svg" alt="the-outfit">
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <span>Clients</span>
+        <h2>Testimonials</h2>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="test-card">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quas consequuntur velit nihil soluta repellat quis aut impedit distinctio non? Harum error minus explicabo, possimus amet quo quaerat inventore optio!</p>
+                                <div class="client-info">
+                                    <span>-- Daraghmeh</span>
+                                    <img src="./src/icon-daraghmeh.svg" alt="daraghmeh" class="client-logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="test-card">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quas consequuntur velit nihil soluta repellat quis aut impedit distinctio non? Harum error minus explicabo, possimus amet quo quaerat inventore optio!</p>
+                                <div class="client-info">
+                                    <span>-- Kadi</span>
+                                    <img src="./src/icon-kadi.svg" alt="kadi" class="client-logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="test-card">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quas consequuntur velit nihil soluta repellat quis aut impedit distinctio non? Harum error minus explicabo, possimus amet quo quaerat inventore optio!</p>
+                                <div class="client-info">
+                                    <span>-- la Familiar</span>
+                                    <img src="./src/icon-la-familiar.svg" alt="la-familiar" class="client-logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+    </section>
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-card-container">
+            <div class="contact-card">
+                <img src="./src/contact-phone.svg" alt="phone">
+                <h4>Phone</h4>
+                <span>+86 135 0000 4929</span>
+            </div>
+            <div class="contact-card">
+                <img src="./src/contact-address.svg" alt="address">
+                <h4>Address</h4>
+                <span>#5080, No.931 Renmin North Road, Yuexiu District, Guangzhou, China</span>
+            </div>
+            <div class="contact-card">
+                <img src="./src/contact-email.svg" alt="email">
+                <h4>Email</h4>
+                <span>mohammad@example.com</span>
+            </div>
+        </div>
+        <div class="contact-form" id="contact-form">
+            <form action="" method="post">
+                <input type="text" name="fullName" id="fullName" placeholder="Full Name*" required><br>
+                <input type="email" name="email" id="email" placeholder="Email*" required><br>
+                <input type="text" name="subject" id="subject" placeholder="Subject"><br>
+                <textarea name="Message" id="message" cols="30" rows="5" placeholder="Message*" required></textarea>
+                <input type="submit" value="Send" id="submitBtn">
+            </form>
+            <img src="./src/location.jpg" alt="map-view" class="map-view">
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-nav">
+            <a href="#about-me">About Me</a>
+            <a href="#my-services">Services</a>
+            <a href="#my-experience">Experience</a>
+            <a href="#my-projects">Projects</a>
+            <a href="#contact-form">Contact Me</a>
+        </div>
+        <div class="footer-social-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a> 
+            <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+        </div>
+        <hr>
+        <div class="footer-descriptions">
+            <span>©2022 Mohammad Ahmad. All Rights Reserved</span>
+            <span>Proudly Created By VSION STUDIO</span>
+        </div>
+    </footer>
 
+   
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Local JS -->

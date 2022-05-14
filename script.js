@@ -58,12 +58,12 @@ if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     toTopbutton.style.display = "none";
 }
 }
+
+
   
     
 
 menuBtn.addEventListener("click", toggleNav)
 closeBtn.addEventListener("click", toggleNav)
 window.onscroll = function() {scrollFunction()};
-
-
 
