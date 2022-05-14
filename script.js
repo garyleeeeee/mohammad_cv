@@ -3,6 +3,35 @@ const closeBtn = document.querySelector(".fa-xmark");
 const navigation = document.getElementById("navigation");
 const toTopbutton = document.getElementById("toTopBtn");
 
+// Swiper - Advantages Section
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    spaceBetween: 0,
+    loop: true,
+
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 1200px
+        1200: {
+        slidesPerView: 2,
+        // spaceBetween: 10
+        },
+        // when window width is >= 2000px
+        2000: {
+            slidesPerView: 3,
+            // spaceBetween: 20,
+            centeredSlides: true,
+            }
+    },
+  
+    // pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+  });
 
 toggleNav = () => {
     navigation.classList.contains("active") ? 
